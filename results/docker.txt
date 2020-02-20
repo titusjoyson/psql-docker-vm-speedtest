@@ -1,0 +1,146 @@
+Iter one:
+---------
+
+SQL statistics:
+    queries performed:
+        read:                            68628
+        write:                           19577
+        other:                           9815
+        total:                           98020
+    transactions:                        4892   (80.88 per sec.)
+    queries:                             98020  (1620.53 per sec.)
+    ignored errors:                      10     (0.17 per sec.)
+    reconnects:                          0      (0.00 per sec.)
+
+General statistics:
+    total time:                          60.4845s
+    total number of events:              4892
+
+Latency (ms):
+         min:                                   10.52
+         avg:                                  787.84
+         max:                                 6911.91
+         95th percentile:                     2120.76
+         sum:                              3854127.47
+
+Threads fairness:
+    events (avg/stddev):           76.4375/1.98
+    execution time (avg/stddev):   60.2207/0.09
+
+
+Iter Two:
+---------
+
+SQL statistics:
+    queries performed:
+        read:                            60648
+        write:                           17311
+        other:                           8673
+        total:                           86632
+    transactions:                        4328   (69.95 per sec.)
+    queries:                             86632  (1400.08 per sec.)
+    ignored errors:                      4      (0.06 per sec.)
+    reconnects:                          0      (0.00 per sec.)
+
+General statistics:
+    total time:                          61.8749s
+    total number of events:              4328
+
+Latency (ms):
+         min:                                   12.56
+         avg:                                  906.13
+         max:                                 3633.74
+         95th percentile:                     2362.72
+         sum:                              3921709.11
+
+Threads fairness:
+    events (avg/stddev):           67.6250/2.25
+    execution time (avg/stddev):   61.2767/0.17
+
+Iter Three:
+-----------
+
+SQL statistics:
+    queries performed:
+        read:                            60018
+        write:                           17121
+        other:                           8583
+        total:                           85722
+    transactions:                        4278   (69.89 per sec.)
+    queries:                             85722  (1400.39 per sec.)
+    ignored errors:                      9      (0.15 per sec.)
+    reconnects:                          0      (0.00 per sec.)
+
+General statistics:
+    total time:                          61.2115s
+    total number of events:              4278
+
+Latency (ms):
+         min:                                   16.38
+         avg:                                  911.20
+         max:                                 4553.00
+         95th percentile:                     2362.72
+         sum:                              3898117.28
+
+Threads fairness:
+    events (avg/stddev):           66.8438/2.36
+    execution time (avg/stddev):   60.9081/0.42
+
+
+Iter Four:
+----------
+
+SQL statistics:
+    queries performed:
+        read:                            55118
+        write:                           15733
+        other:                           7887
+        total:                           78738
+    transactions:                        3936   (63.26 per sec.)
+    queries:                             78738  (1265.50 per sec.)
+    ignored errors:                      1      (0.02 per sec.)
+    reconnects:                          0      (0.00 per sec.)
+
+General statistics:
+    total time:                          62.2167s
+    total number of events:              3936
+
+Latency (ms):
+         min:                                   12.93
+         avg:                                  994.80
+         max:                                 4116.36
+         95th percentile:                     2493.86
+         sum:                              3915536.22
+
+Threads fairness:
+    events (avg/stddev):           61.5000/2.29
+    execution time (avg/stddev):   61.1803/0.19
+
+Iter Five:
+----------
+
+SQL statistics:
+    queries performed:
+        read:                            51758
+        write:                           14777
+        other:                           7399
+        total:                           73934
+    transactions:                        3694   (61.05 per sec.)
+    queries:                             73934  (1221.94 per sec.)
+    ignored errors:                      3      (0.05 per sec.)
+    reconnects:                          0      (0.00 per sec.)
+
+General statistics:
+    total time:                          60.5039s
+    total number of events:              3694
+
+Latency (ms):
+         min:                                   13.11
+         avg:                                 1040.63
+         max:                                 3426.94
+         95th percentile:                     2680.11
+         sum:                              3844094.76
+
+Threads fairness:
+    events (avg/stddev):           57.7188/2.76
+    execution time (avg/stddev):   60.0640/0.14

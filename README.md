@@ -20,7 +20,7 @@ $ sysbench \
 --oltp-table-size=100000 \
 --oltp-tables-count=24 \
 --threads=1 \
---pgsql-host=27.0.0.1 \
+--pgsql-host=127.0.0.1 \
 --pgsql-port=5432 \
 --pgsql-user=sbtest \
 --pgsql-password=password \
@@ -38,7 +38,7 @@ $ sysbench \
 --oltp-tables-count=24 \
 --threads=64 \
 --time=60 \
---pgsql-host=27.0.0.1 \
+--pgsql-host=127.0.0.1 \
 --pgsql-port=5432 \
 --pgsql-user=sbtest \
 --pgsql-password=password \
@@ -64,7 +64,16 @@ The above "watch" command runs the psql command every 1 second. You should see "
 At the end of the test, you should see the summary
 
 7. Setup [PostgreSQL Docker](https://hub.docker.com/_/postgres)
-Do the testing in side the docker container (3 - 5)
+```sh
+$ docker run --name test-postgres -d -p 5432:5432 -e POSTGRES_PASSWORD=password -e POSTGRES_USER=sbtest -d postgres:11
+
+$ psql -h localhost -U sbtest
+
+> CREATE DATABASE sbtest
+> GRANT ALL PRIVILEGES ON DATABASE sbtest to sbtest;
+```
+
+Container steps (4 - 5)
 
 ### Ref
 [https://severalnines.com/database-blog/how-benchmark-postgresql-performance-using-sysbench](https://severalnines.com/database-blog/how-benchmark-postgresql-performance-using-sysbench)
