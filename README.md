@@ -73,7 +73,7 @@ $ psql -h localhost -U sbtest
 > GRANT ALL PRIVILEGES ON DATABASE sbtest to sbtest;
 ```
 
-Container steps (4 - 5)
+Continue steps (4 - 5)
 
 ### Ref
 [https://severalnines.com/database-blog/how-benchmark-postgresql-performance-using-sysbench](https://severalnines.com/database-blog/how-benchmark-postgresql-performance-using-sysbench)
